@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    depends_on: [db]
+  db:
+    image: bitnami/postgresql
+    environment:
+      POSTGRES_USER: brevly_user
+      POSTGRES_PASSWORD: brevly_password
+      POSTGRES_DB: brevly_db

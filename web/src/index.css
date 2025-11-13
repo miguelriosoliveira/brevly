@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+@plugin 'tailwind-scrollbar';
+
+:root {
+  --toastify-color-info: #cfdcec;
+  --toastify-text-color-info: var(--color-blue-base);
+
+  --toastify-color-error: #efe9e9;
+  --toastify-text-color-error: var(--color-danger);
+}
+
+@theme {
+  --color-blue-base: #2c46b1;
+  --color-blue-dark: #2c4091;
+
+  --color-white: #ffffff;
+  --color-gray-100: #f9f9fb;
+  --color-gray-200: #e4e6ec;
+  --color-gray-300: #cdcfd5;
+  --color-gray-400: #74798b;
+  --color-gray-500: #4d505c;
+  --color-gray-600: #1f2025;
+  --color-danger: #b12c4d;
+
+  --font-open-sans: 'Open Sans', sans-serif;
+
+  --text-xs: 0.625rem;
+  --text-xs--line-height: 0.875rem;
+  --text-xs--: 0.875rem;
+  --text-sm: 0.75rem;
+  --text-sm--line-height: 1rem;
+  --text-base: 0.875rem;
+  --text-base--line-height: 1.125rem;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 1.5rem;
+  --text-xl: 1.5rem;
+  --text-xl--line-height: 2rem;
+}
+
+@utility font-xs-uppercase {
+  @apply text-xs uppercase;
+}
+@utility font-sm-semibold {
+  @apply text-sm font-semibold;
+}
+
+@utility font-base-semibold {
+  @apply text-base font-semibold;
+}
+@utility font-xl-bold {
+  @apply text-xl font-bold;
+}
+
+@utility font-lg-bold {
+  @apply text-lg font-bold;
+}
